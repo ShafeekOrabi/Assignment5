@@ -155,6 +155,95 @@ function calculateGrade&#40;score&#41; &lbrace;
         </table>
       </section>
       <hr />
+
+      <section>
+        <h3>Interactive Form Controls</h3>
+        <form>
+          <label for="name">Full Name &#40;Text Input&#41;:</label><br />
+          <input type="text" id="name" name="name" placeholder="john Doe" />
+
+          <br /><br />
+
+          <label for="password">Password&#40;Password Input&#41;:</label><br />
+          <input type="password" id="password" name="password" />
+
+          <br /><br />
+
+          <label for="email">Email Address &#40;Email Input&#41;:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="student@example.com"
+          />
+
+          <br /><br />
+          <label for="age">Age &#40;Number Input&#41;:</label><br />
+          <input type="number" id="age" name="age" step="1" />
+
+          <br /><br />
+
+          <label>Gender &#40;Radio Input&#41;:</label><br />
+          <input type="radio" id="Male" name="gender" value="Male" /><label
+            for="Male"
+            >Male</label
+          ><br />
+          <input type="radio" id="Female" name="gender" value="Female" /><label
+            for="Female"
+            >Female</label
+          ><br />
+
+          <br />
+          <label>Topics &#40;Checkbox Input&#41;:</label><br />
+          <input type="checkbox" id="WD" name="topics" value="WD" /><label
+            for="WD"
+            >Web Development</label
+          >
+          <br />
+          <input type="checkbox" id="DB" name="topics" value="DB" /><label
+            for="DB"
+            >Databases</label
+          ><br /><br />
+
+          <label for="browser">Preferred Browser&#40;Input List&#41;:</label
+          ><br />
+
+          <input type="text" id="browser" name="browser" list="browsers" />
+
+          <datalist id="browsers">
+            <option value="brave">brave</option>
+            <option value="chrome">chrome</option>
+            <option value="firefox">firefox</option>
+          </datalist>
+
+          <br /><br />
+
+          <label for="academic-level">Academic Level&#40;Select&#41;:</label
+          ><br />
+
+          <select id="academic-level" name="academic-level">
+            <option value="undergraduate">Undergraduate</option>
+            <option value="postgraduate">Postgraduate</option>
+            <option value="doctorate">Doctorate</option>
+          </select>
+
+          <br /><br />
+
+          <label for="textarea">Feedback &#40;Textarea&#41;:</label><br />
+          <textarea
+            name="feedback"
+            id="text_area_feedback"
+            rows="4"
+            cols="50"
+            placeholder="Enter feedback here..."
+          ></textarea>
+          <br /><br />
+
+          <button type="submit">Submit Form</button>
+          <button type="reset">Reset Form</button>
+        </form>
+      </section>
+      <hr />
     </main>
   </body>
 </html>
